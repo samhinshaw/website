@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
+
+# Setup
+title:            Sam Hinshaw
+tagline:          "Sam's Thoughts"
+description:      'The personal website of Sam Hinshaw. I like to talk tech.'
+url:              http://samhinshaw.com
+baseurl:          /
+
+author:
+  name:           'Sam Hinshaw'
+  url:            https://twitter.com/samhinshaw
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/samhinshaw/website
