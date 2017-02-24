@@ -101,11 +101,12 @@ html {
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-bottom: 1rem;
+  /*margin-bottom: 1rem;*/
 }
 .sidebar-nav-item {
-  display: block;
+  display: inline-block;
   line-height: 1.75;
+  padding:0 5px;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -113,6 +114,50 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+
+/*
+ *
+ * Social Icons 
+ * 
+ */
+
+.social-icons > div{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons div svg{
+  display:inline-block;
+  height: 18px;
+  width: 18px;
+  margin:0 auto;
+  fill: #999;
+}
+
+.social-icons svg:hover{
+  fill: #fff;
+}
+
+.social-twitter svg:hover{
+  fill: #55ACEE;
+}
+
+.social-github svg:hover{
+  fill: #000000;
+}
+
+.social-codepen svg:hover{
+  fill: #FCD000;
+}
+
+.social-linkedin svg:hover{
+  fill: #0077B5;
+}
+
+.social-instagram svg:hover{
+  fill: #F167F5;
 }
 
 /* Sticky sidebar
