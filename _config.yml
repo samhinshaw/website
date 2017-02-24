@@ -1,25 +1,36 @@
 # Dependencies
 markdown:         redcarpet
-highlighter:      pygments
+highlighter:      pygments.rb
 
 # Permalinks
 permalink:        pretty
-relative_permalinks: true
 
 # Setup
 title:            Sam Hinshaw
-tagline:          "Sam's Thoughts"
+tagline:          "Science & Front-End"
 description:      'The personal website of Sam Hinshaw. I like to talk tech.'
 url:              http://samhinshaw.com
 baseurl:          /
 
 author:
-  name:           'Sam Hinshaw'
-  url:            https://twitter.com/samhinshaw
+  name:  Sam Hinshaw
+  twitter: samhinshaw
 
 paginate:         5
+paginate_path: "/:num/"
+
 
 # Custom vars
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-archives
+  - redcarpet
+  - pygments.rb
+
+
 version:          2.1.0
 
 github:
