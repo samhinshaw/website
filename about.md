@@ -11,7 +11,3 @@ Other things I care am interested in include:
 - Running  
 - Baking  
 - Coffee
-
-Check me out on:
-
-GitHub Twitter Instagram Facebook Codepen LinkedIn

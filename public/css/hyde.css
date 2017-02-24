@@ -101,7 +101,9 @@ html {
 
 /* Sidebar nav */
 .sidebar-nav {
-  /*margin-bottom: 1rem;*/
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+  text-align: center;
 }
 .sidebar-nav-item {
   display: inline-block;
@@ -122,17 +124,22 @@ a.sidebar-nav-item:focus {
  * 
  */
 
-.social-icons > div{
+div.social-icons{
+  margin-left: 0px;
+  text-align: center;
+}
+
+.social-icons > a{
   display: inline-block;
   margin: 0;
   padding: 0;
 }
 
-.social-icons div svg{
+.social-icons a svg{
   display:inline-block;
   height: 18px;
   width: 18px;
-  margin:0 auto;
+  margin:0 10px;
   fill: #999;
 }
 
