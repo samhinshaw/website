@@ -13,6 +13,7 @@
  * https://github.com/poole/hyde.
  */
 
+/* I'm more specific, include me second */ 
 
 /*
  * Contents
@@ -120,8 +121,8 @@ a.sidebar-nav-item:focus {
 
 /*
  *
- * Social Icons 
- * 
+ * Social Icons
+ *
  */
 
 div.social-icons{
