@@ -99,6 +99,7 @@ html {
   font-family: 'Cormorant Garamond', serif;
   font-size: 2.5em;
   line-height: 1.5;
+  font-weight: 300;
   /*text-align: center;*/
 }
 
@@ -146,27 +147,33 @@ div.social-icons{
   fill: #999;
 }
 
-.social-icons svg:hover{
+a.social-icons:hover svg,
+a.social-icons:focus svg{
   fill: #fff;
 }
 
-.social-twitter svg:hover{
+a.social-twitter:hover svg,
+a.social-twitter:focus svg{
   fill: #55ACEE;
 }
 
-.social-github svg:hover{
+a.social-github:hover svg,
+a.social-github:focus svg{
   fill: #000000;
 }
 
-.social-codepen svg:hover{
+a.social-codepen:hover svg,
+a.social-codepen:focus svg{
   fill: #FCD000;
 }
 
-.social-linkedin svg:hover{
+a.social-linkedin:hover svg,
+a.social-linkedin:focus svg{
   fill: #0077B5;
 }
 
-.social-instagram svg:hover{
+a.social-instagram:hover svg,
+a.social-instagram:focus svg{
   fill: #F167F5;
 }
 
