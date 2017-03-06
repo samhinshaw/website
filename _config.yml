@@ -8,7 +8,7 @@ permalink:        pretty
 # Setup
 title:            Sam Hinshaw
 tagline:          "Science & Development"
-description:      'Graduate Student at UBC. Passionate about tech, science, and development.'
+description:      'Passionate about tech, science, and development. Graduate Student at UBC.'
 url:              http://samhinshaw.com
 baseurl:          /
 
@@ -17,7 +17,7 @@ author:
   twitter: samhinshaw
 
 paginate:         5
-paginate_path: "/:num/"
+paginate_path: "/posts/page:num/"
 
 
 # Custom vars
@@ -29,9 +29,6 @@ gems:
   - jekyll-archives
   - redcarpet
   - pygments.rb
-
-
-version:          2.1.0
 
 github:
   repo:           https://github.com/samhinshaw/website

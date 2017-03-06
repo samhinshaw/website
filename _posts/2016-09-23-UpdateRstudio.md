@@ -4,10 +4,10 @@ title: Automatically Update Rstudio
 date: 2016-09-23
 ---
 
-<img src="/images/rstudio.png" class="fit image">
+<img src="/public/rstudio.png" class="fit image">
 
 
-Information on package downloads were obtained from the [RStudio website](https://support.rstudio.com/hc/en-us/articles/203842428-Getting-the-newest-RStudio-builds), and this automation was prompted by [a question asked by a student on GitHub](https://github.com/STAT545-UBC/Discussion/issues/334).  
+Information on package downloads were obtained from the [RStudio website](https://support.rstudio.com/hc/en-us/articles/203842428-Getting-the-newest-RStudio-builds), and this automation was prompted by [a question asked by a student on GitHub](https://github.com/STAT545-UBC/Discussion/issues/334).
 
 ### Step 1. Write your script
 
@@ -23,8 +23,8 @@ rm -r rstudio/
 ```
 Notes:
 
-- I am using absolute file paths here to ensure no weirdness occurs when running this script via crontab.  
-- You can change your `echo` messages to add any other useful information.  If you'd like to check datetime language, run `date --help` in terminal. 
+- I am using absolute file paths here to ensure no weirdness occurs when running this script via crontab.
+- You can change your `echo` messages to add any other useful information.  If you'd like to check datetime language, run `date --help` in terminal.
 - You can change URL in the script to download any version of Rstudio you wish, as per the [RStudio website](https://support.rstudio.com/hc/en-us/articles/203842428-Getting-the-newest-RStudio-builds)!  You can choose from:
 	- Release:
 		+ stable
@@ -33,7 +33,7 @@ Notes:
 	- Installation Type
 		+ desktop
 		+ server
-	- OS 
+	- OS
 		+ mac
 		+ windows
 		+ fedora32
@@ -65,6 +65,4 @@ Let's work through this line:
 2. `/home/shinshaw/scripts/updateRstudio.sh`
 	+ This tells crontab to execute my script
 3. ` >> /home/shinshaw/scripts/logs/updateRstudio.log 2>&1`
-	+ This tells crontab to save the stdout of my script to `~/scripts/logs/updateRstudio.log`, and `2>&1` tells it to include stderr as well.  
-
-
+	+ This tells crontab to save the stdout of my script to `~/scripts/logs/updateRstudio.log`, and `2>&1` tells it to include stderr as well.

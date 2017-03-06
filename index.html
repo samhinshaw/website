@@ -3,36 +3,16 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <div class="post-separator"></div>
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<h1>Welcome!</h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+<div>
+  <p>I am a graduate student in bioinformatics at The University of British Columbia. I am studying the integrative analysis of transcriptomic and metabolomic in sepsis patients. Most of my time is spent switching between the R programming language and shell scripting.</p>
+  <p>I have always had a passion for technology, and in my spare time I like to hack things together. Currently I am interested in digging further development by learning JavaScript. </p>
+  <p>Other things I care am interested in include:</p>
+  <ul>
+    <li>Running 🏃</li>
+    <li>Baking 🍰</li>
+    <li>Coffee ☕</li>
+  </ul>
 
-    {{ post.content }}
-  </div>
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
 </div>
