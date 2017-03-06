@@ -11,7 +11,6 @@ tagline:          "Science & Development"
 description:      'Passionate about tech, science, and development. Graduate Student at UBC.'
 url:              http://samhinshaw.com
 baseurl:          /
-postsurl:         /posts/
 
 author:
   name:  Sam Hinshaw
