@@ -18,7 +18,17 @@
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-      <a class="sidebar-nav-item{% if page.id == /posts %} active{% endif %}" href="{{ site.baseurl }}posts">Posts</a>
+
+      {% comment %}
+        Trying out-of-line if-else statement because inline is not working.
+      {% endcomment %}
+
+      {% if page.layout == 'post_listing' %}
+      <a class="sidebar-nav-item active" href="{{ site.baseurl }}posts">Posts</a>
+      {% else %}
+      <a class="sidebar-nav-item" href="{{ site.baseurl }}posts">Posts</a>
+      {% endif %}
+
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
