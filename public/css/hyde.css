@@ -32,10 +32,13 @@
  * Update the foundational and global aspects of the page.
  */
 
-html {
+html, body {
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   html {
     font-size: 16px;
   }
@@ -44,7 +47,7 @@ html {
   html {
     font-size: 20px;
   }
-}
+}*/
 
 
 /*
@@ -72,7 +75,7 @@ html {
   margin: 0 auto;
 }
 
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   .sidebar {
     position: fixed;
     top: 0;
@@ -84,7 +87,7 @@ html {
   .sidebar .avatar{
     margin: 0 auto;
   }
-}
+}*/
 
 
 /* Sidebar links */
@@ -118,6 +121,10 @@ html {
   font-weight: bold;
 }
 
+.wrapper {
+  min-height: 100%;
+  position: relative
+}
 /*
  *
  * Social Icons
@@ -125,8 +132,14 @@ html {
  */
 
 div.social-icons{
-  margin-left: 0px;
   text-align: center;
+  background-color: #202020;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .social-icons > a{
@@ -179,14 +192,15 @@ a.social-instagram:focus svg{
  * contents to the bottom of the sidebar in tablets and up.
  */
 
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
     right:  1rem;
     bottom: 1rem;
     left:   1rem;
   }
-}
+}*/
+
 
 
 /* Container
@@ -196,11 +210,13 @@ a.social-instagram:focus svg{
  */
 
 .content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
+  margin: 0 auto;
+  max-width: 740px;
+  padding-top:    2rem;
+  padding-bottom: 57px;
 }
 
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   .content {
     max-width: 38rem;
     margin-left: 20rem;
@@ -213,7 +229,7 @@ a.social-instagram:focus svg{
     margin-left: 22rem;
     margin-right: 4rem;
   }
-}
+}*/
 
 
 /*
@@ -222,7 +238,7 @@ a.social-instagram:focus svg{
  * Flip the orientation of the page by placing the `.sidebar` on the right.
  */
 
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   .layout-reverse .sidebar {
     left: auto;
     right: 0;
@@ -238,7 +254,7 @@ a.social-instagram:focus svg{
     margin-left: 4rem;
     margin-right: 22rem;
   }
-}
+}*/
 
 
 
